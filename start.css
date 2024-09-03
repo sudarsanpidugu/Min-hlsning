@@ -39,12 +39,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #f5f5dc;
     padding: 2%;
 }
 
-.container {
-    padding: 10px;
-}
+/* .container {
+    padding: 100px;
+} */
 
 .logo {
     width: 50px;
@@ -60,18 +61,19 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
 nav .Minhalsning {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    margin-left: 30px;
+    font-size: 20px;
 }
 
 nav ul li a i {
-    font-size: 20px;
+    font-size: 22px;
     transform: scale(1.5);
 }
 
@@ -190,7 +192,7 @@ nav ul li a i {
         text-align: center;
     }
 
-    .card .container {
+    .card .card-text {
         margin: 5%;
         justify-content: center;
         display: grid;
