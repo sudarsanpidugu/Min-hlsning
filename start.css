@@ -7,18 +7,15 @@
 
 html {
     scroll-behavior: smooth;
+    background: #000;
+    font-family: "Lato", Arial, sans-serif;
 }
 
 body {
     position: relative;
-    background: #000;
-    font-family: "Lato", Arial, sans-serif;
+    background-color: #F5F5DC !important;
     width: 1440px;
     margin: auto;
-}
-
-.page-background {
-    background-color: #F5F5DC !important;
 }
 
 ul {
@@ -39,13 +36,12 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #f5f5dc;
     padding: 2%;
 }
 
-/* .container {
-    padding: 100px;
-} */
+.container {
+    padding: 10px;
+}
 
 .logo {
     width: 50px;
@@ -61,19 +57,18 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
 }
 
 nav .Minhalsning {
     color: black;
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 nav ul li a i {
-    font-size: 22px;
+    font-size: 20px;
     transform: scale(1.5);
 }
 
@@ -192,7 +187,7 @@ nav ul li a i {
         text-align: center;
     }
 
-    .card .card-text {
+    .card .container {
         margin: 5%;
         justify-content: center;
         display: grid;
@@ -211,9 +206,8 @@ nav ul li a i {
 }
 
 .sample {
-    background-color: #F5F5DC !important;
-
     img {
+        margin: 0px -161px;
         width: 710px;
         height: 721px;
         border-top-right-radius: 20px;
@@ -243,15 +237,15 @@ nav ul li a i {
 }
 
 .sample1{
-    background-color: #F5F5DC !important;
-
     img {
         width: 695px;
         height: 721px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px
     }
-
+    .flex-column{
+        margin-left: -186px;
+    }
     h1{
         font-size: 40px;
         font-weight: bold;
@@ -277,10 +271,11 @@ nav ul li a i {
 .footer{
     background-color: #A9C0A6;
     padding: 2%;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     margin: 4% 0 0 0;
-    height: 40vh;
+    height: 50vh;
     justify-content: space-around;
     a{
         text-decoration: none !important;
@@ -304,8 +299,13 @@ nav ul li a i {
     .fa-brands, .fab{
         transform: scale(2) !important;
         border-radius: 50% !important;
+        margin-left: 14px;
         height: 0px;
         width: 40px;
+    }
+    .test{
+        font-size: 20px;
+        margin-left: -36px;
     }
 }
 
@@ -320,7 +320,6 @@ nav ul li a i {
             margin-right: 120px;
         }
     }
-
 }
 
 .margineft-150px{
