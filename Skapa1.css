@@ -15,8 +15,14 @@ html {
 body {
     width: 1440px;
     height: 924px;
-    background-color: #A9C0A6;
+    background-color: #F5F5DC;
     margin: auto;
+}
+
+.header-label{
+    font-family: Roboto Flex !important;
+    font-size: 20px !important;
+    font-weight: bold;
 }
 
 
@@ -58,55 +64,29 @@ body {
         height: 50px;
     }
 
-    input {
-
-        width: 25px;
-        height: 25px;
-    }
-
-    label {
+    a {
         font-size: 20px;
-        font-weight: 400;
+        color: black;
+        padding-left: 35%;
+    }
+    input{
+        font-size: 20px;
+        padding: 30px;
         width: 540px;
-        height: 84px;
-        display: inline-block;
-        margin-bottom: .5rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: medium !important;
+        margin-bottom: 20px;
     }
 
     button {
-        background-color: #DBDBF0;
+        background-color: #A9C0A6;
         padding: 15px;
         width: 540px;
         border: 0;
         border-radius: 10px;
         font-weight: medium !important;
         font-size: 24px;
-
-        img {
-            width: 30px;
-            height: 30px;
-            margin: 0 10px;
-        }
     }
 
-    .btn1 {
-        background-color: #ffffff;
-        margin-top: 18px;
-        border: 0;
-        border-radius: 10px;
-        font-weight: medium !important;
-        font-size: 24px;
-    }
-
-    .login {
-        margin-top: 15px;
-        text-align: center;
-        width: 520px;
-        height: 20px;
-
-        a {
-            color: black;
-            text-decoration: underline;
-        }
-    }
 }

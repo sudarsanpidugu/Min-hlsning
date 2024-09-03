@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+    font-family: "Lato", Arial, sans-serif;
+
+}
+
+body {
+    width: 1440px;
+    height: 924px;
+    background-color: #A9C0A6;
+    margin: auto
+}
+
+.terms-conditions{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+
+.sample1 {
+
+    .row {
+        padding-top: 20px;
+
+        i {
+            margin-bottom: 20px;
+            font-size: 53px;
+            text-align: middle;
+            color: #F4CCCC;
+            width: 52px;
+            height: 52px;
+            margin-left: 93%;
+            background-color: black;
+            border-radius: 50%;
+        }
+    }
+
+    img {
+        width: 705px;
+        height: 761px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        width: 580px;
+        height: 50px;
+    }
+
+    input {
+        width: 25px;
+        height: 25px;
+    }
+
+    label {
+        font-size: 20px;
+        font-weight: 400;
+        width: 540px;
+        height: 84px;
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    button {
+        background-color: #DBDBF0;
+        padding: 15px;
+        width: 540px;
+        border: 0;
+        border-radius: 10px;
+        font-weight: medium !important;
+        font-size: 24px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+    }
+
+    .btn1 {
+        background-color: #ffffff;
+        margin-top: 18px;
+        border: 0;
+        border-radius: 10px;
+        font-weight: medium !important;
+        font-size: 24px;
+    }
+
+    .login {
+        margin-top: 15px;
+        text-align: center;
+        width: 520px;
+        height: 20px;
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
