@@ -33,6 +33,7 @@ ul {
 }
 
 .header-div {
+    background-color: #F5F5DC;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
