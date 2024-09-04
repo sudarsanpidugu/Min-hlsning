@@ -65,7 +65,6 @@ nav ul li a i {
 }
 
 .sample1{
-    padding: 5%;
     img {
         margin-top: -10px;
         width: 41px;
@@ -78,8 +77,8 @@ nav ul li a i {
         margin-left: 10px;
     }
     .flex-column{
-        margin-left: -186px;
-        margin-top: -589px;
+        margin-left: -152px;
+        margin-top: -575px;
     }
     .mail{
         margin-top: -20px;
@@ -96,7 +95,7 @@ nav ul li a i {
         width: 545px;
     }
     form{
-        margin-top: 55px;
+        margin-top: 15%;
         input{
             width: 656px;
             height: 73px;
