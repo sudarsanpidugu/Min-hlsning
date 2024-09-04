@@ -89,7 +89,7 @@ nav ul li a i {
     margin-left: 100px;
 }
 
-.nav-header{
+.nav-header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,14 +101,16 @@ nav ul li a i {
 
 .content-div {
     background-color: #F5F5DC;
-    h1{
+
+    h1 {
         font-size: 40px;
         font-weight: bold;
     }
-     p{
+
+    p {
         width: 900px;
         font-size: 20px;
-     }
+    }
 }
 
 .cards-div {
@@ -122,26 +124,29 @@ nav ul li a i {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    p{
+
+    p {
         width: 495px;
         font-size: 20px;
         margin-left: 15px;
 
     }
-    h1{
+
+    h1 {
         font-size: 32px;
         margin-left: 15px;
 
 
     }
-    img{
+
+    img {
         margin-top: 20px;
         margin-bottom: 10px;
         margin-left: 15px;
 
     }
-    .arrow-btn{
+
+    .arrow-btn {
         margin-top: 10px;
     }
 }
@@ -159,8 +164,8 @@ nav ul li a i {
     padding: 2.5%;
     box-shadow: 0px 3px #96B7C4;
 
-    
-    img{
+
+    img {
         width: 76px;
         height: 56px;
     }
@@ -172,10 +177,10 @@ nav ul li a i {
     align-items: center;
     justify-content: right;
 
-    span{
+    span {
         font-weight: 600;
     }
-    
+
 }
 
 .icon-btn {
@@ -205,7 +210,7 @@ nav ul li a i {
     padding: 2.5%;
     box-shadow: 0px 3px #849C81;
 
-    img{
+    img {
         width: 89px;
         height: 58px;
     }
@@ -223,7 +228,7 @@ nav ul li a i {
     padding: 2.5%;
     box-shadow: 0px 3px #B97979;
 
-    img{
+    img {
         width: 54px;
         height: 72px;
     }
@@ -241,8 +246,88 @@ nav ul li a i {
     padding: 2.5%;
     box-shadow: 0px 3px #9797C1;
 
-    img{
+    img {
         width: 60px;
         height: 65px;
     }
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+
+    background-color: #F5F5DC;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 1280px;
+    height: 842px;
+
+    .modal-body {
+        padding: unset !important;
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p {
+            width: 900px;
+            font-size: 20px;
+        }
+
+        img {
+            width: 1196px;
+            height: 587px;
+        }
+    }
+
+}
+
+/* The Close Button */
+.close {
+    justify-content: end;
+    display: flex;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-right: -20px;
+
+    i {
+        font-size: 53px;
+        text-align: middle;
+        color: #F4CCCC;
+        width: 52px;
+        height: 52px;
+        background-color: #2B2B2B;
+        border-radius: 50%;
+    }
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
