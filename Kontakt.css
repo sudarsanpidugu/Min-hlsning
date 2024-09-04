@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #000;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #F5F5DC !important;
+    width: 1440px;
+    height: 1127px;
+    margin: auto;
+}
+
+ul {
+    margin-bottom: unset !important;
+}
+
+
+.header-div {
+    height: 104px;
+    background-color: #A9C0A6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+.logo {
+    width: 50px;
+    padding-left: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav .Minhalsning {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+nav ul li a i {
+    font-size: 20px;
+    transform: scale(1.5);
+}
+
+.sample1{
+    padding: 5%;
+    img {
+        margin-top: -10px;
+        width: 41px;
+        height: 30px;
+    }
+    a{
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+        margin-left: 10px;
+    }
+    .flex-column{
+        margin-left: -186px;
+        margin-top: -589px;
+    }
+    .mail{
+        margin-top: -20px;
+    }
+    h3{ 
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    p{
+        margin-top: -20px;
+        font-size: 20px;
+        font-weight: 400;
+        width: 545px;
+    }
+    form{
+        margin-top: 55px;
+        input{
+            width: 656px;
+            height: 73px;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        textarea{
+            width: 656px;
+            height: 190px;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        label{
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+    }
+    .checkbox{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    button {
+        background-color: #A9C0A6;
+        width: 656px;
+        height: 73px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 0;
+        font-size: 24px;
+    }
+}
