@@ -35,8 +35,9 @@ ul {
 
 
 .logo {
-    width: 50px;
-    padding-left: 10px;
+    width: 25px;
+    height: 32px;
+    margin-left: 15px;
 }
 
 nav ul li {
@@ -48,19 +49,21 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
 nav .Minhalsning {
     color: black;
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 30px;
+    font-size: 20px;
+    padding: 45px;
 }
 
 nav ul li a i {
     font-size: 20px;
+    width: 33px;
+    height: 33px;
     transform: scale(1.5);
 }
 
