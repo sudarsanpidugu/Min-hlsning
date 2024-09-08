@@ -14,46 +14,123 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="less">
-            <nav class="header-div">
-                <div class="nav-header">
-                    <img src="images/nature.png" class="logo">
-                    <a href="#" class="Minhalsning">Dagbok</a>
-                </div>
-                <ul id="sidemenu mb-unset">
-                    <li><a href="#">Mina hälsningar</a></li>
-                    <li><a href="#">Så funkar det</a></li>
-                    <li><a href="#">Om oss</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href=""><i class='far fa-user-circle'></i></a></li>
-                </ul>
-            </nav>
+
+    <nav class="header-div">
+        <div>
+            <img src="images/nature.png" class="logo">
+            <a href="#" class="Minhalsning">Min hälsning</a>
         </div>
-    </div>
-
-
-    <div class="main-cotainer">
-        <div class="Title">
-            <h1>Dagbok</h1>
-            <p class="py-3">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magnaaliqua. Ut enimad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duisauteirure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+        <ul id="sidemenu" class="mb-unset">
+            <li><a href="#">Mina hälsningar</a></li>
+            <li><a href="#">Dagbok</a></li>
+            <li><a href="#">Om mig</a></li>
+            <li><a href="#">Min begravning</a></li>
+            <li><a href=""><i class='far fa-user-circle'></i></a></li>
+        </ul>
+    </nav>
+    <div class="m-4">
+        <div class="content">
+            <h1 class="mb-1">Dagbok</h1>
+            <p class="text-20">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            </p>
+            <button class="custom-button mb-2"><i class="fa-solid fa-plus"></i>
+                Nytt dagboksinlägg
+            </button>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <button class="test">Kontaktuppgifter</button>
-                    <button>Integritetsinställningar</button>
-                    <button>Kontakta support</button>
-                    <button>Radera konto</button>
+        <div  class="calender-head " >
+            <h1 class="text-32">Arkiv</h1>
+
+            <div class="flex-row justify-space-between">
+                <div class="flex-column">
+                    <div class="calender pt-3">
+                        <div class="header">
+                            <div id="prevBtn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <div class="monthYear" id="monthYear"></div>
+                            <div id="nextBtn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="days">
+                            <div class="day">Mon </div>
+                            <div class="day">Tue </div>
+                            <div class="day">Wed </div>
+                            <div class="day">Thu </div>
+                            <div class="day">Fri </div>
+                            <div class="day">Sat </div>
+                            <div class="day">Sun </div>
+                        </div>
+
+                        <div class="dates" id="dates"></div>
+                        <script src="calender.js"></script>
+                    </div>
+
+                    <h2 class="text-20">Taggar</h2>
+                    <span id="loopData"></span>
                 </div>
 
+                <div class="flex-column">
+                    <div class="img-content flex-column">
+                        <img src="images/Group 79.png" alt="">
+
+                        <div class="flex-column">
+                            <div class="flex-row justify-space-between">
+                                <span>
+                                    <h1 class="text-24">2024-08-19 – Resan till Köpenhamn</h1>
+                                </span>
+                                <div>
+                                    <button class="colour-btn">resa</button>
+                                    <button class="colour-btn">födelsedag</button>
+                                </div>
+                            </div>
+                            <p class="text-20">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore...
+                            </p>
+                            <a class="text-20">Visa hela </a>
+                        </div>
+                    </div>
+
+                    <div class="img-content flex-column">
+                        <div class="flex-column">
+                            <div class="flex-row justify-space-between">
+                                <span>
+                                    <h1 class="text-24">2024-08-03 – Jag har blivit farfar!</h1>
+                                </span>
+                                <div>
+                                    <button class="colour-btn">barnbarn</button>
+                                </div>
+                            </div>
+                            <p class="text-20">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi
+                                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore...
+                            </p>
+                            <a class="text-20">Visa hela </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <script>
+        const cars = ["barnbarn", "födelsedag", "huset", "jul", "midsommar", "resa", "överraskning"];
+        let text = "";
+        for (let i = 0; i < cars.length; i++) {
+            text += `<div class="item">${cars[i]}</div>`;
+        }
+        document.getElementById("loopData").innerHTML = text;
+    </script>
 </body>
 
 </html>

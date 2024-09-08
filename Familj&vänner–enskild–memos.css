@@ -197,3 +197,60 @@ nav ul li a i {
     margin-top: 30px;
     padding-right: 6%;
 }
+
+/* -----------------------------popup------------------------ */
+.body-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 977px;
+    height: 722px;
+    background: #FFF;
+    border-radius: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    box-sizing: border-box;
+    width: 273px;
+    height: 722px;
+    /* background: #C1EEF4; */
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    img{
+        margin: 55px;
+        margin-bottom: 25px;
+    }
+    h4{
+        text-align: center;
+        font-size: 24px;
+    }
+    p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+.right-container{
+    width: 273px;
+    height: 722px;
+    background: #C1EEF4;
+    img{
+        margin: 55px;
+        margin-bottom: 25px;
+    }
+    h4{
+        text-align: center;
+        font-size: 24px;
+    }
+    p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
