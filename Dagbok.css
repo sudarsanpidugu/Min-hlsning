@@ -70,24 +70,27 @@ nav ul li a i {
     flex-direction: row;
     align-items: center;
 }
+
 /* ----------------------------------------------------- */
 
 .content {
     padding-left: 5%;
     margin-top: 6%;
+
     h1 {
         font: 40px;
         font-weight: bold;
     }
 
     p {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 20px;
         width: 890px;
         height: 72px;
     }
+
     .custom-button {
-        margin-top: 30px;
+        margin-top: 40px;
         background-color: #A9C0A6 !important;
         height: 73px;
         width: 312px;
@@ -95,17 +98,17 @@ nav ul li a i {
         border-radius: 15px;
         padding: 0 16px;
         font-size: 24px;
-        font-family: Roboto Flex;
-        i{
+
+        i {
             margin-right: 10px;
         }
     }
 }
-.calender-head{
-    padding: 2% 5%;
-    
-}
 
+.calender-head {
+    padding: 2% 5%;
+
+}
 
 .item {
     color: #2B2B2B;
@@ -125,8 +128,24 @@ nav ul li a i {
 #loopData {
     display: flex;
     flex-wrap: wrap;
-    width: 270px;
-    gap: 10px;
+    font-size: 16px;
+    width: 276px;
+    gap: 8px;
+    font-weight: 400;
+}
+
+a {
+    /* font-size: 160px; */
+    color: #000;
+    text-decoration: underline;
+
+}
+
+.text-32 {
+    font-size: 32px !important;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .calender {
@@ -136,7 +155,7 @@ nav ul li a i {
     flex-direction: column;
     padding: 8px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 30px;
 }
 
@@ -210,31 +229,43 @@ nav ul li a i {
     color: #fff
 }
 
-.text-32 {
-    font-size: 32px !important;
-}
 
-.text-24 {
-    font-size: 24px !important;
-    font-weight: bold;
-}
 
-.text-20 {
+
+h2 {
     font-size: 20px;
+    font-weight: 500px;
+    margin-top: 10px;
 }
 
 .img-content {
     margin-left: 20px;
-    max-height: 671px;
-    max-width: 957px;
+    height: 671px;
+    width: 957px;
     border-radius: 20px;
     background: #ffffff;
     padding: 20px;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 
-    p{
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    p {
+        margin-left: 20px;
+        font-size: 20px;
         width: 890px;
+    }
+
+    a {
+        font-size: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        margin-top: -10px;
     }
 
     img {
@@ -242,6 +273,7 @@ nav ul li a i {
         width: 873px;
         height: 431px;
         margin-bottom: 20px;
+        margin-top: -10px;
     }
 }
 
@@ -266,12 +298,52 @@ nav ul li a i {
 
 .colour-btn {
     color: #2B2B2B;
-    font-size: 12px;
-    width: fit-content;
-    height: 30px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 1px 8px;
     border: 1px solid #A9C0A6;
-    background-color: #A9C0A6;
+    background: #A9C0A6;
     border-radius: 8px;
-    text-align: center;
+    margin-right: 22px;
+}
+
+.content-container {
+    margin-left: 20px;
+    height: 241px;
+    width: 957px;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: -20px 20px;
+    }
+
+    a {
+        font-size: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        margin-top: -20px;
+    }
+
+    p {
+        margin-left: 20px;
+        font-size: 20px;
+        width: 890px;
+        margin-top: 23px;
+    }
+
+    button {
+        color: #2B2B2B;
+        font-size: 16px;
+        padding: 1px 8px;
+        border: 1px solid #A9C0A6;
+        background: #A9C0A6;
+        border-radius: 8px;
+        margin-right: 22px;
+        margin-top: -20px;
+    }
 }
