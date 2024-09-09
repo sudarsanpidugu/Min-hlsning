@@ -1,20 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     background: #000;
     font-family: "Lato", Arial, sans-serif;
 }
 
-a {
-    color: #000 !important;
-    text-decoration: underline !important;
-}
-
 body {
     position: relative;
-    background-color: #F5F5DC;
-    /* width: 1440px !important;  */
+    background-color: #F5F5DC !important;
+    width: 1440px;
+    height: 2437px;
     margin: auto;
-    /* overflow-x: hidden !important; */
 }
 
 ul {
@@ -23,50 +25,160 @@ ul {
 
 
 .header-div {
-    background-color: #A9C0A6 !important;
+    background-color: #A9C0A6;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1%;
-    width: 100%;
+    padding: 2%;
 }
 
-ul {
+.logo {
+    width: 25px;
+    height: 32px;
+    margin-left: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    font-weight: 400;
+}
+
+nav .Minhalsning {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: 400;
+}
+
+nav ul li a i {
+    font-size: 20px;
+    transform: scale(1.5);
+}
+
+.nav-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-
-    li {
-        grid-area: 20px;
-        list-style: none !important;
-    }
+    align-items: center;
 }
+
+/* ----------------------------------------------------- */
 
 .content {
+    padding-left: 5%;
+    margin-top: 6%;
+
     h1 {
         font: 40px;
         font-weight: bold;
-        font-family: Lato;
     }
 
     p {
-        font-size: 14px;
-        padding: 8px 0 20px 0;
-        width: 848px;
+        margin-top: 20px;
+        font-size: 20px;
+        width: 890px;
         height: 72px;
+    }
+
+    .custom-button {
+        margin-top: 40px;
+        height: 73px;
+        width: 312px;
+        background: transparent;
+        border: 4px solid #A9C0A6;
+        border-radius: 15px;
+        padding: 0 16px;
+        font-size: 24px;
+
+        i {
+            margin-right: 10px;
+        }
     }
 }
 
-.custom-button {
-    background-color: #F5F5DC !important;
-    height: 73px;
-    width: 312px;
-    border: 2px solid #A9C0A6;
-    border-radius: 15px;
-    padding: 0 16px;
-    font-size: 24px;
-    font-family: Roboto Flex;
+/* ---------------------- add----------------------------------------------- */
+
+.entry-div {
+    margin: 25px 12px;
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+
+    input {
+        border: 1px solid #2B2B2B;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        height: 73px;
+        width: 956px;
+
+    }
+
+
+    .editor {
+        height: 430px;
+        width: 957px;;
+        border-radius: 20px;
+        background: #fff;
+
+            img {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                width: 958px;
+                height: 73px;
+                padding: 14px 20px;
+                background: #D4E4D1;
+
+            }
+
+            p{
+                font-size: 20px;
+                width: 890px;
+                height: 249px;
+                margin: -78px 30px;
+                margin-top: 20px;
+                
+           }
+           a{
+            font-size: 16px;
+        }
+           
+      
+    }
+   
+    button{
+        margin-top: 30px;
+        width: 956px;
+        color: #2B2B2B;
+        font-size: 24px;
+        height: 73px;
+        padding: 5px;
+        border: 4px solid #A9C0A6;
+        background-color: #A9C0A6;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+}
+/* ----------------------------------calander----------------------------- */
+.calender-head {
+    padding: 2% 5%;
+
 }
 
 .item {
@@ -87,7 +199,23 @@ ul {
 #loopData {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    font-size: 16px;
+    width: 276px;
+    gap: 8px;
+    font-weight: 400;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+
+}
+
+.text-32 {
+    font-size: 32px !important;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .calender {
@@ -97,8 +225,7 @@ ul {
     flex-direction: column;
     padding: 8px;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
     margin-bottom: 30px;
 }
 
@@ -160,7 +287,7 @@ ul {
 }
 
 .date:hover .date.active {
-    background: #A9C0A6;
+    background: #ff5869;
     color: #fff
 }
 
@@ -172,32 +299,51 @@ ul {
     color: #fff
 }
 
-.text-32 {
-    font-size: 32px !important;
-}
 
-.text-24 {
-    font-size: 24px !important;
-}
 
-.text-20 {
+
+h2 {
     font-size: 20px;
+    font-weight: 500px;
+    margin-top: 10px;
 }
 
 .img-content {
-    max-height: 685px;
-    max-width: 957px;
+    margin-left: 20px;
+    height: 671px;
+    width: 957px;
     border-radius: 20px;
     background: #ffffff;
     padding: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    p {
+        margin-left: 20px;
+        font-size: 20px;
+        width: 890px;
+    }
+
+    a {
+        font-size: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        margin-top: -10px;
+    }
 
     img {
+        margin: auto;
         width: 873px;
         height: 431px;
         margin-bottom: 20px;
+        margin-top: -10px;
     }
 }
 
@@ -209,6 +355,7 @@ ul {
 .flex-column {
     display: flex;
     flex-direction: column;
+
 }
 
 .loop-view {
@@ -221,98 +368,55 @@ ul {
 
 .colour-btn {
     color: #2B2B2B;
-    font-size: 12px;
-    width: fit-content;
-    height: 30px;
-    padding: 5px;
+    font-size: 16px;
+    padding: 1px 8px;
     border: 1px solid #A9C0A6;
-    background-color: #A9C0A6;
+    background: #A9C0A6;
     border-radius: 8px;
-    text-align: center;
+    margin-right: 22px;
 }
 
-.font-weight-500 {
-    font-weight: 500;
-}
-
-.font-weight-600 {
-    font-weight: 600;
-}
-
-.gap-1 {
-    gap: 10px;
-}
-
-.gap-2 {
-    gap: 20px;
-}
-
-.gap-3 {
-    gap: 30px;
-}
-
-
-.entry-div {
+.content-container {
+    margin-left: 20px;
+    height: 241px;
+    width: 957px;
+    border-radius: 20px;
+    background: #ffffff;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 
-    input {
-        border: 1px solid #2B2B2B;
-        border-radius: 15px;
-        padding: 10px;
+    h4 {
         font-size: 24px;
         font-weight: bold;
-        height: 73px;
-        width: 956px;
+        margin: -20px 20px;
     }
 
+    a {
+        font-size: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        margin-top: -20px;
+    }
 
-    .editor {
-        display: flex;
-        flex-direction: column;
-        height: 430;
+    p {
+        margin-left: 20px;
+        font-size: 20px;
+        width: 890px;
+        margin-top: 23px;
+    }
 
-        .editor-heading {
-            display: flex;
-            align-items: center;
-            height: 73px;
-            width: 958px;
-            background: #D4E4D1 !important;
-            border-radius: 15px 15px 0 0;
-
-            img {
-                width: 958px;
-            }
-        }
-
-        .editor-content {
-          justify-content: space-between;  
-          flex-direction: column;
-            padding: 25px;
-            display: flex;
-            align-items: center;
-            height: 357px;
-            width: 958px;
-            background: #fff !important;
-            border-radius: 0 0 15px 15px;
-
-            p{
-                font-size: 20px;
-            }
-        }
-
-        button{
-            width: 956px;
-            color: #2B2B2B;
-            font-size: 12px;
-            height: 73px;
-            padding: 5px;
-            border: 4px solid #A9C0A6;
-            background-color: #A9C0A6;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 24px;
-        }
-
+    button {
+        color: #2B2B2B;
+        font-size: 16px;
+        padding: 1px 8px;
+        border: 1px solid #A9C0A6;
+        background: #A9C0A6;
+        border-radius: 8px;
+        margin-right: 22px;
+        margin-top: -20px;
     }
 }
+
+
+
