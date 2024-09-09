@@ -96,6 +96,7 @@ nav ul li a i {
     background: #C1EEF4;
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
+    
     img{
         margin: 55px;
         margin-bottom: 25px;
@@ -118,18 +119,29 @@ nav ul li a i {
     padding: 20px;
     width: 704px;
     height: 1016px;
-    margin-top: 50px;
-
+    img {
+        font-size:px;
+        color: #F4CCCC;
+        width: 52.5px;
+        height: 52.5px;
+        padding: 10px;
+        margin-left: 92%;
+        background-color: #F4CCCC;
+        border-radius: 50%;
+        margin-bottom: -30px;
+    }
+   
     
 }
+
 form{
     label{
         font-size: 20px;
         font-weight: 500;
         padding-top: 15px ;
-        margin-bottom: -5px;
     
     }
+    
     input{
         width: 656px;
         height: 73px;
