@@ -7,14 +7,13 @@
 
 html {
     scroll-behavior: smooth;
-    background: #000;
     font-family: "Lato", Arial, sans-serif;
 }
 
 body {
     position: relative;
     background-color: #F5F5DC !important;
-    width: 1440px;
+    width: 100%;
     margin: auto;
 }
 

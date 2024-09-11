@@ -7,14 +7,13 @@
 
 html {
     scroll-behavior: smooth;
-    background: #000;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: Lato;
 }
 
 body {
     position: relative;
     /* background-color: #F5F5DC !important; */
-    width: 1440px;
+    width: 100%;
     margin: auto;
 }
 
@@ -50,14 +49,14 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
 nav .Minhalsning {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 30px;
 }
 

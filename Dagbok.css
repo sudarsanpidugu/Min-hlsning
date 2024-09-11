@@ -14,8 +14,7 @@ html {
 body {
     position: relative;
     background-color: #F5F5DC !important;
-    width: 1440px;
-    height: 1575px;
+    width: 100%;
     margin: auto;
 }
 
