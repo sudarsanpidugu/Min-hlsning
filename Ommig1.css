@@ -137,8 +137,10 @@ nav ul li a i {
                 font-size: 20px;
                 font-weight: 500;
                 font-family: Roboto;
+                margin-top: 15px;
+                margin-bottom: -10px;
             }
-            select{
+            input{
                 width: 970px;
                 height: 73px;
                 border-radius: 15px;
@@ -146,11 +148,15 @@ nav ul li a i {
                 padding: 20px;
                 font-size: 20px;
                 font-weight: 500;
-                margin-bottom: 30px;
+                margin-bottom: -10px;
                 font-family: Roboto;
-                
+                margin-top: 10px;
+            } 
+            i{
+                display: flex;
+                padding-left: 95%;
+                margin-top: -30px;
             }
-            
            
         }
 
